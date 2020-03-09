@@ -1,0 +1,6 @@
+Hello, %mailfrom%,
+
+Your mail has been successfully deliverd to %mailto%.
+
+%serveradmin%
+

@@ -1,0 +1,10 @@
+%date% - %time%
+
+Hello %mailfrom%,
+
+You tried to post a message to this mailing list:
+%mailto%,
+but you are not allowed.  Sorry, but you just can't do that.
+
+%serveradmin%
+

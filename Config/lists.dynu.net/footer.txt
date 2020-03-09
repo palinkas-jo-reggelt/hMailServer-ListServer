@@ -1,0 +1,7 @@
+
+
+**********  LISTSERV : %address%  **********
+You are receiving this email because you are subscribed to %address%
+* To unsubscribe, send an email to %address% with the following in the subject line (all lower case): unsubscribe
+* For the list of subscribers, send an email to %address% with the following in the subject line (all lower case): list
+* For a list of commands, send an email to %address% with the following in the subject line (all lower case): help

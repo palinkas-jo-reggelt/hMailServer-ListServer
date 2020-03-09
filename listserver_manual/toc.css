@@ -1,0 +1,34 @@
+/* -----------------------------------------------------------------
+   Table of Content CSS styles
+   http://www.mytreedb.com/treedbnotes_pro.html
+----------------------------------------------------------------- */
+
+.subitems {padding-left: 20px; }
+
+#tree {
+ padding: 3px;
+ border-top-width: 1px;
+ border-top-style: solid;
+ border-top-color: #444957; }
+
+#tree img { }
+
+#toc h1 {
+ font-family: Verdana, Arial, Helvetica, sans-serif;
+ font-size: medium;
+ color: #585E72;
+ text-decoration: none;
+ margin: 0px;
+ padding: 3px; }
+
+#tree a {
+ font-family: Verdana, Arial, Helvetica, sans-serif;
+ font-size: small;
+ color: #535A6F;
+ text-decoration: none; }
+
+#tree a:hover {
+ font-family: Verdana, Arial, Helvetica, sans-serif;
+ font-size: small;
+ color: #CC0000;
+ text-decoration: underline; }

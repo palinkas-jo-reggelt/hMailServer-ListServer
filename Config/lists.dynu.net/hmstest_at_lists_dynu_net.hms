@@ -1,0 +1,188 @@
+#hMailServer ListServer Sample List-Level Configuration File
+#Saturday, March 02, 2013
+
+# Settings are described in the comments
+# Any line STARTING with a # will be treated as a comment
+# Configuration file must be name like my_list_at_mydomain_com.hms for my.list@mydomain.com
+# You have the option of using a different file extension, but you must set it in the global settings
+# Ensure each list is set to Public Mode and has no SMTP authentification activated.
+# Please see the ListServer Manual for more information: http://www.sspxusa.org/goodies/hMailServer/listserver_manual/listserver_manual.htm
+
+
+# Following tokens will be replaced with real values
+# This applies to prefix and subject/content of notifications and the header/footer
+# %admin%        -> admin of the list
+# %serveradmin%  -> address of the server admin
+# %address%      -> address of the list
+# %mailto%       -> address of the list
+# %mailfrom%     -> address of the sender
+# %domain%       -> domain of the list
+# %date%         -> date
+# %time%         -> time
+
+
+# Use command tells the script to use another config file, so fullname or name (with same path) of the file can be entered here
+# use=c:\hmailserver\configs\myconfigfile.hms
+
+
+# Email of list administrator, default is the server admin address (which is set in the global config)
+admin=admin@lists.domain.net
+
+# Operator combining PW and allowed lists
+# and -> both has to be right
+# or  -> one has to be right (default)
+operator=or
+
+# What to do if check of recipient fails, that is, if they don't exist or are over quota
+# delete   -> delete recipient  (default)
+# redirect -> redirect to admin
+# nothing  -> nothing
+todo=redirect
+
+# Password enclosure string, (default = #)
+pw_enclosure=#
+
+# Defined password. 
+# To use the password, users will place their pw somewhere in subject enclosed by pw_enclosure
+# A password allows a person to post to the list even if they are not a member nor a poster
+pw=pw
+
+# Automatically allow members of the distribution list to post, and add them to allowedaddresses
+# default=true
+allowmembers=true
+
+# List of allowed senders (you can also specify these on a domain level or global level.  See the ListServer Manual.
+# After config name line each value in a new line, end by blank line or comment line
+allowaddresses=
+admin@lists.domain.net 
+
+
+
+# Add Sender header of email
+# list  -> list's address (default)
+# Use %mailfrom% to use senders address
+# any other email address
+addsenderheader=list
+
+# Add Reply-To header to email
+# list  -> list's address
+# any other email address
+addreplytoheader=list
+
+# Add Return-Path header to email
+# list  -> list's address
+# any other email address
+addreturnpathheader=list
+
+# Modifiy mail from in smtp session
+# This will allow the address to collect mailer-daemon messages
+# admin -> admin's address (default)
+# list  -> list's address
+# any other email address
+smtpmailfrom=list
+
+# Allowed attachments, suffixes separted by #
+# * or emtpy -> allow all (default)
+# none       -> remove all
+allowed_attachments=
+
+# These attachments are not allowed
+# leave empty to not deny particular extensions
+disallowed_attachments=#exe#bat#com#msi
+
+# Limit attachment size (kb)
+# Leave blank to have no size limit
+allowed_attachment_size=
+
+# Allowed total size of all attachements
+# Leave blank to have no size limit
+allowed_attachments_total_size=
+
+
+
+
+# Prepend Subject
+# This can be anything you like.  Don't use double quotes.
+# Note that there will be no spaces between the prefix and the subject
+subjectprefix=[HMS Test List]: 
+
+# Send failure notification to sender
+failure_notification=true
+
+# The subject of a Failure Notification Message
+failure_notification_subject=Delivery Failure
+
+# Content-Textfile failure notification, has to be in the same directory as the config file
+failure_notification_file=failure_notification.txt
+
+# Send success notification to sender
+success_notification=false
+
+# The subject of a Success Notification Message
+success_notification_subject=Successful delivery
+
+# Content-Textfile success notification, has to be in the same directory as the config file
+# The text contained in this file will be used as the body of the notification message
+success_notification_file=success_notification.txt
+
+
+
+
+# Content-Textfile Header, has to be in the same directory as the config file
+# The text contained in this file will be used as the header of the body of the notification message
+header_file=header.txt
+
+# Content-Textfile Footer, has to be in the same directory as the config file
+# The text contained in this file will be used as the footer of the body of the notification message
+footer_file=footer.txt
+
+# Content-Textfile Header HTML, has to be in the same directory as the config file
+# The text contained in this file will be used as the header of the body of the notification message
+header_file_html=header.html
+
+# Content-Textfile Footer HTML, has to be in the same directory as the config file
+# The text contained in this file will be used as the footer of the body of the notification message
+footer_file_html=footer.html
+
+# Attach a list of all the recipients to the end of the message body
+attach_recipients_to_footer=false
+
+# Delimiter for attached recipients
+# When the recipient list is created, the addresses will be separated with this delimiter
+attach_recipients_delimiter=; 
+
+# HTML added with recipients, %recipients% will be replaced
+attach_recipients_html=<p><font size=2 face=Arial><span style='font-size:8.0pt;font-family:Arial'>%recipients%</span></font></p>
+
+
+
+# Allow List Commands
+# Setting this to false will disable list commands.  The message will then be processed as a normal email.
+# If this is set to true, ANYBODY can send list commands to the list.  It doesn't matter whether they are posters or have a password.
+# Send help to the list to receive further information
+email_subscription=true
+
+# Send a copy of all commands to the admin
+email_subscription_admin_notification=true
+
+# Allowed commands of email subscription, after config name line each value in a new line, stop by emtpy or comment line
+# For example, if you don't want people to get a list of recipients, then remove the list command.
+# !!!Make sure that you don't comment out a command in the middle of this listing, because a comment line ends the listing.
+email_subscription_allowed_cmds=
+help
+subscribe
+unsubscribe
+list
+#subscribeaddress
+#unsubscribeaddress
+#subscribelist
+#unsubscribelist
+
+
+
+# Send success notification for each command
+email_subscription_success_notification=true
+
+# Send failure notification for each command
+email_subscription_failure_notification=true
+

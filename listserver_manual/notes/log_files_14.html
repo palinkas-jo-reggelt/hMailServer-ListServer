@@ -1,0 +1,121 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head><title>Log Files</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+</head>
+<body style="margin: 5px 5px 5px 5px; background-color: #ffffff;">
+<p style=" text-align: left; text-indent: 0px; background: #fff0c0; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><span style=" font-size: 28pt; font-family: 'Arial', 'Helvetica', sans-serif; font-style: normal; font-weight: bold; color: #ff0000; background-color: transparent; text-decoration: none;">Log Files</span></p>
+<p style=" text-align: left; text-indent: 0px; background: #ffffff; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><span style=" font-size: 11pt; font-family: 'Arial', 'Helvetica', sans-serif; font-style: normal; font-weight: normal; color: #000000; background-color: transparent; text-decoration: none;"><br></span></p>
+<p style=" text-align: left; text-indent: 0px; background: #ffffff; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><span style=" font-size: 11pt; font-family: 'Arial', 'Helvetica', sans-serif; font-style: normal; font-weight: normal; color: #000000; background-color: transparent; text-decoration: none;"><br></span></p>
+<p style=" text-align: left; text-indent: 0px; background: #ffffff; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><span style=" font-size: 11pt; font-family: 'Arial', 'Helvetica', sans-serif; font-style: normal; font-weight: normal; color: #000000; background-color: transparent; text-decoration: none;">In the hMailServer's Logs directory at RootDir/Logs, with the ListServer running, you will find a few kinds of log files:</span></p>
+<p style=" text-align: left; text-indent: 0px; background: #ffffff; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><span style=" font-size: 11pt; font-family: 'Arial', 'Helvetica', sans-serif; font-style: normal; font-weight: normal; color: #000000; background-color: transparent; text-decoration: none;"><br></span></p>
+<div style=" text-align: left; text-indent: 0px; background: #ffffff; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table width="100%" border=1 cellpadding=3 cellspacing=-1 style="border-color: #4f7ab0; border-style: solid; border-collapse: collapse;">
+<tr valign=top>
+<td style="border-color: #4f7ab0; border-style: solid; width: 256px;"><p style=" text-align: left; text-indent: 0px; background: #ffffff; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><span style=" font-size: 10pt; font-family: 'Courier New', 'Courier', monospace; font-style: normal; font-weight: normal; color: #800080; background-color: transparent; text-decoration: none;">hmailserver_2013-03-01.log</span></p>
+</td>
+<td style="border-color: #4f7ab0; border-style: solid; width: 640px;"><p style=" text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><span style=" font-size: 8pt; font-family: 'Arial', 'Helvetica', sans-serif; font-style: normal; font-weight: normal; color: #000000; background-color: transparent; text-decoration: none;">This log records all mail actions such as clients connecting to their imap folders, the delivery of mail, the exchange of protocols between servers.</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-color: #4f7ab0; border-style: solid; width: 256px;"><p style=" text-align: left; text-indent: 0px; background: #ffffff; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><span style=" font-size: 10pt; font-family: 'Courier New', 'Courier', monospace; font-style: normal; font-weight: normal; color: #800080; background-color: transparent; text-decoration: none;">hmailserver_awstats.log</span></p>
+</td>
+<td style="border-color: #4f7ab0; border-style: solid; width: 640px;"><p style=" text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><span style=" font-size: 8pt; font-family: 'Arial', 'Helvetica', sans-serif; font-style: normal; font-weight: normal; color: #000000; background-color: transparent; text-decoration: none;">This is a log of all the connections made - both to and from.&nbsp; It helps you to analyze the traffic.</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-color: #4f7ab0; border-style: solid; width: 256px;"><p style=" text-align: left; text-indent: 0px; background: #ffffff; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><span style=" font-size: 10pt; font-family: 'Courier New', 'Courier', monospace; font-style: normal; font-weight: normal; color: #800080; background-color: transparent; text-decoration: none;">hmailserver_event_2013-03-01.log</span></p>
+</td>
+<td style="border-color: #4f7ab0; border-style: solid; width: 640px;"><p style=" text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><span style=" font-size: 8pt; font-family: 'Arial', 'Helvetica', sans-serif; font-style: normal; font-weight: normal; color: #000000; background-color: transparent; text-decoration: none;">This logs whatever happens in the </span><span style=" font-size: 8pt; font-family: 'Courier New', 'Courier', monospace; font-style: normal; font-weight: normal; color: #800080; background-color: transparent; text-decoration: none;">EventHandlers.vbs</span><span style=" font-size: 8pt; font-family: 'Arial', 'Helvetica', sans-serif; font-style: normal; font-weight: normal; color: #000000; background-color: transparent; text-decoration: none;"> file.&nbsp; In other words, look here for any debugging you might do in the script.</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-color: #4f7ab0; border-style: solid; width: 256px;"><p style=" text-align: left; text-indent: 0px; background: #ffffff; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><span style=" font-size: 10pt; font-family: 'Courier New', 'Courier', monospace; font-style: normal; font-weight: normal; color: #800080; background-color: transparent; text-decoration: none;">ERROR_hmailserver_2013-03-01.log</span></p>
+</td>
+<td style="border-color: #4f7ab0; border-style: solid; width: 640px;"><p style=" text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><span style=" font-size: 8pt; font-family: 'Arial', 'Helvetica', sans-serif; font-style: normal; font-weight: normal; color: #000000; background-color: transparent; text-decoration: none;">This log contains information about when hMailServer encounters a script error, or a serious configuration error or a server error.&nbsp; If you see a new one in your logs directory, check it out!</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p style=" text-align: left; text-indent: 0px; background: #ffffff; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><span style=" font-size: 11pt; font-family: 'Arial', 'Helvetica', sans-serif; font-style: normal; font-weight: normal; color: #000000; background-color: transparent; text-decoration: none;"><br></span></p>
+<p style=" text-align: left; text-indent: 0px; background: #ffffff; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><span style=" font-size: 11pt; font-family: 'Arial', 'Helvetica', sans-serif; font-style: normal; font-weight: normal; color: #000000; background-color: transparent; text-decoration: none;"><br></span></p>
+<p style=" text-align: left; text-indent: 0px; background: #ffffff; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><span style=" font-size: 11pt; font-family: 'Arial', 'Helvetica', sans-serif; font-style: normal; font-weight: normal; color: #000000; background-color: transparent; text-decoration: none;">If you want to modify the format of the log files a little bit, you can adjust the spacing.&nbsp; There are a set of variables toward the top of the </span><span style=" font-size: 10pt; font-family: 'Courier New', 'Courier', monospace; font-style: normal; font-weight: normal; color: #800080; background-color: transparent; text-decoration: none;">EventsHandler.vbs</span><span style=" font-size: 11pt; font-family: 'Arial', 'Helvetica', sans-serif; font-style: normal; font-weight: normal; color: #000000; background-color: transparent; text-decoration: none;"> script that you may modify.</span></p>
+<p style=" text-align: left; text-indent: 0px; background: #ffffff; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><span style=" font-size: 11pt; font-family: 'Arial', 'Helvetica', sans-serif; font-style: normal; font-weight: normal; color: #000000; background-color: transparent; text-decoration: none;"><br></span></p>
+<p style=" text-align: left; text-indent: 0px; background: #ffffff; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><span style=" font-size: 10pt; font-family: 'Arial', 'Helvetica', sans-serif; font-style: italic; font-weight: normal; color: #8d8d8d; background-color: transparent; text-decoration: none;">There are double-quotation marks that appear in the log files.&nbsp; These had been put there for backward compatibility with hMailServer version 4.&nbsp; The ListServer Script would parse the log files in an attempt to retrieve email addresses.&nbsp; This will be removed in future version of this script.</span></p>
+<p style=" text-align: left; text-indent: 0px; background: #ffffff; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><span style=" font-size: 11pt; font-family: 'Arial', 'Helvetica', sans-serif; font-style: normal; font-weight: normal; color: #000000; background-color: transparent; text-decoration: none;"><br></span></p>
+<div style=" text-align: left; text-indent: 0px; background: #ffffff; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table width=831 border=1 cellpadding=3 cellspacing=-1 style="border-color: #4f7ab0; border-style: solid; border-collapse: collapse;">
+<tr valign=top>
+<td style="border-color: #4f7ab0; border-style: solid; width: 65px;"><p style=" text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><span style=" font-size: 11pt; font-family: 'Arial', 'Helvetica', sans-serif; font-style: normal; font-weight: bold; color: #ff0000; background-color: transparent; text-decoration: none;">token</span></p>
+</td>
+<td style="border-color: #4f7ab0; border-style: solid; width: 234px;"><p style=" text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><span style=" font-size: 11pt; font-family: 'Arial', 'Helvetica', sans-serif; font-style: normal; font-weight: bold; color: #ff0000; background-color: transparent; text-decoration: none;">Output</span></p>
+</td>
+<td style="border-color: #4f7ab0; border-style: solid; width: 434px;"><p style=" text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><span style=" font-size: 11pt; font-family: 'Arial', 'Helvetica', sans-serif; font-style: normal; font-weight: bold; color: #ff0000; background-color: transparent; text-decoration: none;">Description</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-color: #4f7ab0; border-style: solid; width: 65px;"><p style=" text-align: left; text-indent: 0px; background: #ffffff; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><span style=" font-size: 10pt; font-family: 'Courier New', 'Courier', monospace; font-style: normal; font-weight: normal; color: #008000; background-color: transparent; text-decoration: none;">s0</span></p>
+</td>
+<td style="border-color: #4f7ab0; border-style: solid; width: 234px;"><p style=" text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><span style=" font-size: 10pt; font-family: 'Courier New', 'Courier', monospace; font-style: normal; font-weight: normal; color: #5c7db2; background-color: transparent; text-decoration: none;">"~"</span></p>
+</td>
+<td style="border-color: #4f7ab0; border-style: solid; width: 434px;"><p style=" text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><span style=" font-size: 10pt; font-family: 'Arial', 'Helvetica', sans-serif; font-style: normal; font-weight: normal; color: #000000; background-color: transparent; text-decoration: none;">Used for the first level messages</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-color: #4f7ab0; border-style: solid; width: 65px;"><p style=" text-align: left; text-indent: 0px; background: #ffffff; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><span style=" font-size: 10pt; font-family: 'Courier New', 'Courier', monospace; font-style: normal; font-weight: normal; color: #008000; background-color: transparent; text-decoration: none;">s1</span></p>
+</td>
+<td style="border-color: #4f7ab0; border-style: solid; width: 234px;"><p style=" text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><span style=" font-size: 10pt; font-family: 'Courier New', 'Courier', monospace; font-style: normal; font-weight: normal; color: #5c7db2; background-color: transparent; text-decoration: none;">"&nbsp;&nbsp;&nbsp;&nbsp; "</span></p>
+</td>
+<td style="border-color: #4f7ab0; border-style: solid; width: 434px;"><p style=" text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><span style=" font-size: 10pt; font-family: 'Arial', 'Helvetica', sans-serif; font-style: normal; font-weight: normal; color: #000000; background-color: transparent; text-decoration: none;">Used for informational details</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-color: #4f7ab0; border-style: solid; width: 65px;"><p style=" text-align: left; text-indent: 0px; background: #ffffff; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><span style=" font-size: 10pt; font-family: 'Courier New', 'Courier', monospace; font-style: normal; font-weight: normal; color: #008000; background-color: transparent; text-decoration: none;">s2</span></p>
+</td>
+<td style="border-color: #4f7ab0; border-style: solid; width: 234px;"><p style=" text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><span style=" font-size: 10pt; font-family: 'Courier New', 'Courier', monospace; font-style: normal; font-weight: normal; color: #5c7db2; background-color: transparent; text-decoration: none;">"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "</span></p>
+</td>
+<td style="border-color: #4f7ab0; border-style: solid; width: 434px;"><p style=" text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><span style=" font-size: 10pt; font-family: 'Arial', 'Helvetica', sans-serif; font-style: normal; font-weight: normal; color: #000000; background-color: transparent; text-decoration: none;">Used for sub-details</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-color: #4f7ab0; border-style: solid; width: 65px;"><p style=" text-align: left; text-indent: 0px; background: #ffffff; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><span style=" font-size: 10pt; font-family: 'Courier New', 'Courier', monospace; font-style: normal; font-weight: normal; color: #008000; background-color: transparent; text-decoration: none;">a1</span></p>
+</td>
+<td style="border-color: #4f7ab0; border-style: solid; width: 234px;"><p style=" text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><span style=" font-size: 10pt; font-family: 'Courier New', 'Courier', monospace; font-style: normal; font-weight: normal; color: #5c7db2; background-color: transparent; text-decoration: none;"> "--&gt;"</span></p>
+</td>
+<td style="border-color: #4f7ab0; border-style: solid; width: 434px;"><p style=" text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><span style=" font-size: 10pt; font-family: 'Arial', 'Helvetica', sans-serif; font-style: normal; font-weight: normal; color: #000000; background-color: transparent; text-decoration: none;">Used to indicate an action that should be easier to notice</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-color: #4f7ab0; border-style: solid; width: 65px;"><p style=" text-align: left; text-indent: 0px; background: #ffffff; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><span style=" font-size: 10pt; font-family: 'Courier New', 'Courier', monospace; font-style: normal; font-weight: normal; color: #008000; background-color: transparent; text-decoration: none;">e1</span></p>
+</td>
+<td style="border-color: #4f7ab0; border-style: solid; width: 234px;"><p style=" text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><span style=" font-size: 10pt; font-family: 'Courier New', 'Courier', monospace; font-style: normal; font-weight: normal; color: #5c7db2; background-color: transparent; text-decoration: none;">"===ERROR===&gt;"</span></p>
+</td>
+<td style="border-color: #4f7ab0; border-style: solid; width: 434px;"><p style=" text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><span style=" font-size: 10pt; font-family: 'Arial', 'Helvetica', sans-serif; font-style: normal; font-weight: normal; color: #000000; background-color: transparent; text-decoration: none;">Used to show an error</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-color: #4f7ab0; border-style: solid; width: 65px;"><p style=" text-align: left; text-indent: 0px; background: #ffffff; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><span style=" font-size: 10pt; font-family: 'Courier New', 'Courier', monospace; font-style: normal; font-weight: normal; color: #008000; background-color: transparent; text-decoration: none;">w1</span></p>
+</td>
+<td style="border-color: #4f7ab0; border-style: solid; width: 234px;"><p style=" text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><span style=" font-size: 10pt; font-family: 'Courier New', 'Courier', monospace; font-style: normal; font-weight: normal; color: #5c7db2; background-color: transparent; text-decoration: none;">"===WARNING=&gt;"</span></p>
+</td>
+<td style="border-color: #4f7ab0; border-style: solid; width: 434px;"><p style=" text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><span style=" font-size: 10pt; font-family: 'Arial', 'Helvetica', sans-serif; font-style: normal; font-weight: normal; color: #000000; background-color: transparent; text-decoration: none;">Used to indicate a warning</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-color: #4f7ab0; border-style: solid; width: 65px;"><p style=" text-align: left; text-indent: 0px; background: #ffffff; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><span style=" font-size: 10pt; font-family: 'Courier New', 'Courier', monospace; font-style: normal; font-weight: normal; color: #008000; background-color: transparent; text-decoration: none;">d1</span></p>
+</td>
+<td style="border-color: #4f7ab0; border-style: solid; width: 234px;"><p style=" text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><span style=" font-size: 10pt; font-family: 'Courier New', 'Courier', monospace; font-style: normal; font-weight: normal; color: #5c7db2; background-color: transparent; text-decoration: none;">"-------------------------"</span></p>
+</td>
+<td style="border-color: #4f7ab0; border-style: solid; width: 434px;"><p style=" text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><span style=" font-size: 10pt; font-family: 'Arial', 'Helvetica', sans-serif; font-style: normal; font-weight: normal; color: #000000; background-color: transparent; text-decoration: none;">Used to separate Event Sections</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p style=" text-align: left; text-indent: 0px; background: #ffffff; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><span style=" font-size: 11pt; font-family: 'Arial', 'Helvetica', sans-serif; font-style: normal; font-weight: normal; color: #000000; background-color: transparent; text-decoration: none;"><br></span></p>
+<p style=" text-align: left; text-indent: 0px; background: #ffffff; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><span style=" font-size: 11pt; font-family: 'Arial', 'Helvetica', sans-serif; font-style: normal; font-weight: normal; color: #000000; background-color: transparent; text-decoration: none;"><br></span></p>
+<p style=" text-align: left; text-indent: 0px; background: #ffffff; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><span style=" font-size: 11pt; font-family: 'Arial', 'Helvetica', sans-serif; font-style: normal; font-weight: normal; color: #000000; background-color: transparent; text-decoration: none;"><br></span></p>
+<p style=" text-align: left; text-indent: 0px; background: #ffffff; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><span style=" font-size: 11pt; font-family: 'Arial', 'Helvetica', sans-serif; font-style: normal; font-weight: normal; color: #000000; background-color: transparent; text-decoration: none;"><br></span></p>
+<p style=" text-align: left; text-indent: 0px; background: #ffffff; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><span style=" font-size: 11pt; font-family: 'Arial', 'Helvetica', sans-serif; font-style: normal; font-weight: normal; color: #000000; background-color: transparent; text-decoration: none;"><br></span></p>
+<p style=" text-align: left; text-indent: 0px; background: #ffffff; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><span style=" font-size: 11pt; font-family: 'Arial', 'Helvetica', sans-serif; font-style: normal; font-weight: normal; color: #000000; background-color: transparent; text-decoration: none;"><br></span></p>
+<p style=" text-align: left; text-indent: 0px; background: #ffffff; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><span style=" font-size: 11pt; font-family: 'Arial', 'Helvetica', sans-serif; font-style: normal; font-weight: normal; color: #000000; background-color: transparent; text-decoration: none;"><br></span></p>
+<p style=" text-align: left; text-indent: 0px; background: #ffffff; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><span style=" font-size: 11pt; font-family: 'Arial', 'Helvetica', sans-serif; font-style: normal; font-weight: normal; color: #000000; background-color: transparent; text-decoration: none;"><br></span></p>
+<p style=" text-align: left; text-indent: 0px; background: #ffffff; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><span style=" font-size: 11pt; font-family: 'Arial', 'Helvetica', sans-serif; font-style: normal; font-weight: normal; color: #000000; background-color: transparent; text-decoration: none;"><br></span></p>
+</body></html>

@@ -6,6 +6,8 @@ I did not write this. I merely saved it after the original version disappeared f
 
 http://www.hmailserver.com/forum/viewtopic.php?f=20&t=15301&start=0
 
+Documentation (by Brother.Gabriel) hosted here: https://listserver.dynu.net/ (also included in this repository)
+
 
 # Prerequisites: 
 * Working hMailServer

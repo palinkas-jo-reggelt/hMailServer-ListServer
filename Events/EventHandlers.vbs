@@ -1,3 +1,5 @@
+Option Explicit
+
 Private Const ADMIN = "Administrator"
 Private Const PASSWORD = "supersecretpassword"
 
